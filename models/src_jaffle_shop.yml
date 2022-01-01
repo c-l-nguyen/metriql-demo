@@ -16,9 +16,18 @@ sources:
 
       - name: orders
         description: Raw orders data.
+        meta:
+          metriql:
+            aggregates:
+              totals:
+                measures: [unique_id]
         columns:
           - name: id
             description: Primary key for orders.
+            meta:
+              metriql.measure:
+                name: unique_id
+                aggregation: count
             tests:
               - unique
               - not_null

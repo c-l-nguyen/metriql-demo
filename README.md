@@ -1,15 +1,8 @@
-Welcome to your new dbt project!
+A technical demo showcasing how to use simple features of [metriql](https://metriql.com) in a dbt project. The setup was outlined in this [Medium article](https://datadissectiondr.medium.com/a-simple-demo-setting-up-metriql-db314bf432e1) for which this code serves as source material for the article.
 
-### Using the starter project
+The jaffle shop sample project was used as the data source for modeling. Data was stored in a GCP BigQuery project that this project linked to (also summarized in the article).
 
-Try running the following commands:
-- dbt run
-- dbt test
-
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+The following features of metriql were demoed:
+* measures
+* dimensions
+* aggregations
